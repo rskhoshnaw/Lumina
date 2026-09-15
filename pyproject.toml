@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lumina"
+version = "0.1.0"
+description = "A clean, personalizable animation library on top of Manim for educational and motivational videos (with Kurdish Sorani + English support)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+ {name = "Your Name"}
+]
+dependencies = [
+ "manim>=0.18.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "isort"]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/lumina"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lumina*"]
