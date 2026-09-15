@@ -12,8 +12,11 @@ from google import genai
 # =========================================================
 # 🔑 Gemini API Key
 # =========================================================
-GEMINI_API_KEY = "AQ.Ab8RN6KYeRfbPBUXn8EHWeiFLBN3EZ_KXamtqFCNGZS8EiFVuQ"  # کلید واقعی خود را اینجا قرار دهید
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
+if not GEMINI_API_KEY:
+    st.error("GEMINI_API_KEY  It has not been set.")
+    st.stop()
 
 # =========================================================
 # 🤖 مدل‌های جایگزین Gemini
