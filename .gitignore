@@ -1,6 +1,19 @@
+# Python virtual environment
 .venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Media folders
 media/
 generated/
-__pycache__/
+
+# SVG files
+*.svg
+
+# Video files
 *.mp4
+
+# PNG images
 *.png
